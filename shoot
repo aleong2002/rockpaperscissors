@@ -1,0 +1,26 @@
+# game of rps - print out message if win or loss
+
+ player1 = input("rock, paper, or scissors?").lower
+ player2 = input("rock, paper, or scissors?").lower
+ 
+ def compare(p1, p2):
+  if p1 == p2:
+      return "it's a tie!"
+  elif p1 == "rock":
+      if: p2 == "paper":
+          return "Player 1 wins"
+      else:
+          return "Player 2 wins"
+  elif p1 == "scissors":
+      if p2 == "paper":
+          return "Player 1 wins."
+      else:
+          return "Player 2 wins"
+  elif p1 == "paper":
+      if p2 == "rock":
+          return "Player 2 wins."
+      else:
+          return "Player 1 wins"
+  else:
+      return "mistype error. please enter rock, paper, or scissors.
+print(compare(player1, player2))
