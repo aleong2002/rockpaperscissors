@@ -1,0 +1,22 @@
+# generate random number 1 to 9, ask for inputted guess, and tell if guess is high, low, or exact
+# additional: return with how many guesses it took to get right
+
+import random
+
+num = random.randint(1, 9)
+c = 0
+g = 0
+while g != num and g 1= "exit":
+    g = input("Enter a guess: ")
+    if g == "exit":
+        break
+    g = int(g)
+    c += 1
+    if g >num:
+        print("your guess is too high")
+    elif g < num:
+        print("your guess is too low.")
+    else:
+        print("you guessed correctly!")
+        print("it took", c, "tries")
+input()
